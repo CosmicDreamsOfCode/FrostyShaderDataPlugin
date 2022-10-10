@@ -22,6 +22,8 @@ namespace ShaderDataPlugin
             ShaderDBVersion ver = (ShaderDBVersion)ShaderDb.Version;
             if (ver == ShaderDBVersion.StarWarsBattlefront2Alpha
             || (ver == ShaderDBVersion.NFSPayback_MECatalyst && ProfilesLibrary.DataVersion != (int)ProfileVersion.MirrorsEdgeCatalyst) // they use the same version, yet here we are
+            || ver == ShaderDBVersion.StarWarsBattlefront2
+            || ver == ShaderDBVersion.Anthem
             || ver == ShaderDBVersion.StarWarsSquadrons
             || ver == ShaderDBVersion.PvZBattleForNeighborville
             || ver == ShaderDBVersion.NFSHeat)
@@ -100,11 +102,11 @@ namespace ShaderDataPlugin
 
             handle = reader.ReadUInt();
             index = reader.ReadUShort();
-            if ((ShaderDBVersion)ShaderDb.Version == ShaderDBVersion.StarWarsSquadrons)
+            if ((ShaderDBVersion)ShaderDb.Version == ShaderDBVersion.StarWarsSquadrons || (ShaderDBVersion)ShaderDb.Version == ShaderDBVersion.StarWarsBattlefront2)
                 reader.ReadUShort();
             textureType = reader.ReadByte();
             flags = reader.ReadByte();
-            if ((ShaderDBVersion)ShaderDb.Version == ShaderDBVersion.StarWarsSquadrons)
+            if ((ShaderDBVersion)ShaderDb.Version == ShaderDBVersion.StarWarsSquadrons || (ShaderDBVersion)ShaderDb.Version == ShaderDBVersion.StarWarsBattlefront2)
                 reader.ReadUShort();
         }
     }

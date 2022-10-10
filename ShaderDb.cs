@@ -196,6 +196,7 @@ namespace ShaderDataPlugin
                         case ShaderDBVersion.StarWarsBattlefront1:
                         case ShaderDBVersion.StarWarsBattlefront2Alpha:
                         case ShaderDBVersion.NFSPayback_MECatalyst:
+                        case ShaderDBVersion.StarWarsBattlefront2:
                         case ShaderDBVersion.MassEffectAndromeda:
                         case ShaderDBVersion.Battlefield1:
                         case ShaderDBVersion.BattlefieldV:
@@ -215,7 +216,7 @@ namespace ShaderDataPlugin
                     for (int i = 0; i < shaderConstantsCount; ++i)
                         shaderConstants.Add(new GenericShaderConstants(reader));
 
-                    if (Version == (int)ShaderDBVersion.Anthem)
+                    if (Version == (int)ShaderDBVersion.Anthem || Version == (int)ShaderDBVersion.StarWarsBattlefront2)
                         reader.ReadUInt();
 
                     uint constantFunctionBlocksCount = reader.ReadUInt();
@@ -245,7 +246,9 @@ namespace ShaderDataPlugin
                                 }
                             case ShaderDBVersion.NFS2015_PvZGardenWarfare2:
                             case ShaderDBVersion.StarWarsBattlefront1:
+                            case ShaderDBVersion.StarWarsBattlefront2Alpha:
                             case ShaderDBVersion.NFSPayback_MECatalyst:
+                            case ShaderDBVersion.StarWarsBattlefront2:
                             case ShaderDBVersion.Battlefield1:
                             case ShaderDBVersion.BattlefieldV:
                                 {
@@ -548,6 +551,7 @@ namespace ShaderDataPlugin
                                 reader.ReadBytes(39);
                                 break;
                             case ShaderDBVersion.StarWarsBattlefront2Alpha:
+                            case ShaderDBVersion.StarWarsBattlefront2:
                             case ShaderDBVersion.MassEffectAndromeda:
                             case ShaderDBVersion.Anthem:
                             case ShaderDBVersion.StarWarsSquadrons:

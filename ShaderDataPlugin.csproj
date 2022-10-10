@@ -56,16 +56,16 @@
   
   <ItemGroup>
     <Reference Include="FrostyControls">
-      <HintPath>..\..\FrostyControls.dll</HintPath>
+      <HintPath>..\FrostyToolsuite\FrostyEditor\bin\Developer\Debug\FrostyControls.dll</HintPath>
     </Reference>
     <Reference Include="FrostyCore">
-      <HintPath>..\..\FrostyCore.dll</HintPath>
+      <HintPath>..\FrostyToolsuite\FrostyEditor\bin\Developer\Debug\FrostyCore.dll</HintPath>
     </Reference>
     <Reference Include="FrostyHash">
-      <HintPath>..\..\FrostyHash.dll</HintPath>
+      <HintPath>..\FrostyToolsuite\FrostyEditor\bin\Developer\Debug\FrostyHash.dll</HintPath>
     </Reference>
     <Reference Include="FrostySdk">
-      <HintPath>..\..\FrostySdk.dll</HintPath>
+      <HintPath>..\FrostyToolsuite\FrostyEditor\bin\Developer\Debug\FrostySdk.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
   </ItemGroup>

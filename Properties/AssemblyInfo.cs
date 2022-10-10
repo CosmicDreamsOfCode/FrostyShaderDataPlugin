@@ -28,7 +28,7 @@ using FrostySdk;
 [assembly: PluginAuthor("Brawltendo")]
 [assembly: PluginVersion("1.0.0.0")]
 
-// Battlefront II doesn't use shader databases
-[assembly: PluginNotValidForProfile((int)ProfileVersion.StarWarsBattlefrontII)]
+// Battlefront II doesn't use shader databases (except in old versions)
+//[assembly: PluginNotValidForProfile((int)ProfileVersion.StarWarsBattlefrontII)]
 //[assembly: RegisterMenuExtension(typeof(ShaderDbTestMenuExtension))]
 [assembly: RegisterAssetDefinition("ShaderGraph", typeof(ShaderGraphAssetDefinition))]

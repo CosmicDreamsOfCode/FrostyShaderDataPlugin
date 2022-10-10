@@ -71,7 +71,9 @@ namespace ShaderDataPlugin
                 case ShaderDBVersion.NFSRivals:
                 case ShaderDBVersion.NFS2015_PvZGardenWarfare2:
                 case ShaderDBVersion.StarWarsBattlefront1:
+                case ShaderDBVersion.StarWarsBattlefront2Alpha:
                 case ShaderDBVersion.NFSPayback_MECatalyst:
+                case ShaderDBVersion.StarWarsBattlefront2:
                 case ShaderDBVersion.MassEffectAndromeda:
                 case ShaderDBVersion.Battlefield1:
                 case ShaderDBVersion.BattlefieldV:
@@ -129,7 +131,9 @@ namespace ShaderDataPlugin
                 case ShaderDBVersion.NFSRivals:
                 case ShaderDBVersion.NFS2015_PvZGardenWarfare2:
                 case ShaderDBVersion.StarWarsBattlefront1:
+                case ShaderDBVersion.StarWarsBattlefront2Alpha:
                 case ShaderDBVersion.NFSPayback_MECatalyst:
+                case ShaderDBVersion.StarWarsBattlefront2:
                 case ShaderDBVersion.MassEffectAndromeda:
                 case ShaderDBVersion.Battlefield1:
                 case ShaderDBVersion.BattlefieldV:
@@ -181,7 +185,9 @@ namespace ShaderDataPlugin
                 case ShaderDBVersion.NFSRivals:
                 case ShaderDBVersion.NFS2015_PvZGardenWarfare2:
                 case ShaderDBVersion.StarWarsBattlefront1:
+                case ShaderDBVersion.StarWarsBattlefront2Alpha:
                 case ShaderDBVersion.NFSPayback_MECatalyst:
+                case ShaderDBVersion.StarWarsBattlefront2:
                 case ShaderDBVersion.MassEffectAndromeda:
                 case ShaderDBVersion.Battlefield1:
                 case ShaderDBVersion.BattlefieldV:
@@ -215,7 +221,9 @@ namespace ShaderDataPlugin
                 case ShaderDBVersion.NFSRivals:
                 case ShaderDBVersion.NFS2015_PvZGardenWarfare2:
                 case ShaderDBVersion.StarWarsBattlefront1:
+                case ShaderDBVersion.StarWarsBattlefront2Alpha:
                 case ShaderDBVersion.NFSPayback_MECatalyst:
+                case ShaderDBVersion.StarWarsBattlefront2:
                 case ShaderDBVersion.MassEffectAndromeda:
                 case ShaderDBVersion.Battlefield1:
                 case ShaderDBVersion.BattlefieldV:

@@ -60,7 +60,9 @@ namespace ShaderDataPlugin
                 case ShaderDBVersion.NFSRivals:
                 case ShaderDBVersion.NFS2015_PvZGardenWarfare2:
                 case ShaderDBVersion.StarWarsBattlefront1:
+                case ShaderDBVersion.StarWarsBattlefront2Alpha:
                 case ShaderDBVersion.NFSPayback_MECatalyst:
+                case ShaderDBVersion.StarWarsBattlefront2:
                 case ShaderDBVersion.MassEffectAndromeda:
                 case ShaderDBVersion.Battlefield1:
                     if (ShaderDb.Version == (int)ShaderDBVersion.NFSPayback_MECatalyst && ProfilesLibrary.DataVersion == (int)ProfileVersion.MirrorsEdgeCatalyst)
@@ -118,10 +120,11 @@ namespace ShaderDataPlugin
                     case ShaderDBVersion.StarWarsBattlefront1:
                     case ShaderDBVersion.StarWarsBattlefront2Alpha:
                     case ShaderDBVersion.NFSPayback_MECatalyst:
+                    case ShaderDBVersion.StarWarsBattlefront2:
                     case ShaderDBVersion.MassEffectAndromeda:
                     case ShaderDBVersion.Battlefield1:
                     case ShaderDBVersion.BattlefieldV:
-                        if (ShaderDb.Version == (int)ShaderDBVersion.MassEffectAndromeda || ShaderDb.Version == (int)ShaderDBVersion.StarWarsBattlefront2Alpha
+                        if (ShaderDb.Version == (int)ShaderDBVersion.MassEffectAndromeda || ShaderDb.Version == (int)ShaderDBVersion.StarWarsBattlefront2Alpha || ShaderDb.Version == (int)ShaderDBVersion.StarWarsBattlefront2
                         || (ShaderDb.Version == (int)ShaderDBVersion.NFSPayback_MECatalyst && ProfilesLibrary.DataVersion != (int)ProfileVersion.MirrorsEdgeCatalyst))
                             data = reader.ReadBytes(32);
                         else
@@ -131,8 +134,6 @@ namespace ShaderDataPlugin
                         data = reader.ReadBytes(40);
                         break;
                     case ShaderDBVersion.StarWarsSquadrons:
-                        data = reader.ReadBytes(32);
-                        break;
                     case ShaderDBVersion.PvZBattleForNeighborville:
                     case ShaderDBVersion.NFSHeat:
                         data = reader.ReadBytes(7 * sizeof(ulong));
@@ -142,7 +143,7 @@ namespace ShaderDataPlugin
                 }
 
                 genericShaderSolutionHash = reader.ReadGuid();
-                if (ShaderDb.Version == (int)ShaderDBVersion.Anthem || ShaderDb.Version == (int)ShaderDBVersion.StarWarsSquadrons)
+                if (ShaderDb.Version == (int)ShaderDBVersion.Anthem || ShaderDb.Version == (int)ShaderDBVersion.StarWarsBattlefront2)
                     reader.ReadBytes(8);
             }
         }

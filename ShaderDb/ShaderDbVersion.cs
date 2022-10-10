@@ -17,12 +17,14 @@ namespace ShaderDataPlugin
         StarWarsBattlefront1 = 214,
         StarWarsBattlefront2Alpha = 216,
         NFSPayback_MECatalyst = 221,
+        StarWarsBattlefront2 = 222,
         MassEffectAndromeda = 224,
         Battlefield1 = 228,
         BattlefieldV = 229,
         Anthem = 249,
         StarWarsSquadrons = 252,
         PvZBattleForNeighborville = 263,
-        NFSHeat = 271
+        NFSHeat = 271,
+        Battlefield2042 = 292
     }
 }

@@ -106,7 +106,8 @@ namespace ShaderDataPlugin
                 || ProfilesLibrary.DataVersion == (int)ProfileVersion.Anthem
                 || ProfilesLibrary.DataVersion == (int)ProfileVersion.StarWarsSquadrons
                 || ProfilesLibrary.DataVersion == (int)ProfileVersion.PlantsVsZombiesBattleforNeighborville
-                || ProfilesLibrary.DataVersion == (int)ProfileVersion.NeedForSpeedHeat)
+                || ProfilesLibrary.DataVersion == (int)ProfileVersion.NeedForSpeedHeat
+                || ProfilesLibrary.DataVersion == (int)ProfileVersion.StarWarsBattlefrontII)
                 {
                     ShaderDb.UseCache = true;
                     BuildTextureHashCache(task);
